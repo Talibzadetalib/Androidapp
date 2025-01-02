@@ -51,6 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcome_tv" />
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textLayoutCA"
         android:layout_width="match_parent"
@@ -168,7 +169,6 @@
         android:text="@string/by_checking_the_box_you_agree_to_our"
         app:layout_constraintStart_toStartOf="@id/passwordTextLayout"
         app:layout_constraintTop_toBottomOf="@id/passwordTextLayout" />
-
     <TextView
         android:id="@+id/terms_tv"
         style="@style/CheckboxText2"
@@ -202,6 +202,7 @@
         app:layout_constraintStart_toEndOf="@id/check_box_tv2"
         app:layout_constraintTop_toBottomOf="@id/passwordTextLayout" />
 
+
     <LinearLayout
         android:id="@+id/create_account_linear"
         android:layout_width="300dp"
@@ -230,7 +231,6 @@
             android:src="@drawable/vector" />
 
     </LinearLayout>
-
     <TextView
         android:id="@+id/already_member_tv"
         style="@style/AlreadyMemberText"

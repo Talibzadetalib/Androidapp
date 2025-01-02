@@ -5,18 +5,27 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.androidapp.CoreFragment
 import com.example.androidapp.R
+import com.example.androidapp.databinding.FragmentCreateAccountBinding
 
 
-class CreateAccountFragment : Fragment() {
+class CreateAccountFragment : CoreFragment<FragmentCreateAccountBinding>(){
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_create_account, container, false)
+        binding = FragmentCreateAccountBinding.inflate(inflater, container, false)
+        return binding?.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding?.backToSignIn?.setOnClickListener {
+            parentFragmentManager.popBackStack()
+        }
     }
 
 }
