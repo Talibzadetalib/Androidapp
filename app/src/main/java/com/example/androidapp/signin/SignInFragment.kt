@@ -31,7 +31,7 @@ class SignInFragment : CoreFragment<FragmentSigninBinding>() {
             findNavController().navigate(R.id.action_signInFragment_to_createAccountFragment)
         }
         binding?.signInLinear?.setOnClickListener {
-            findNavController().navigate(R.id.action_signInFragment_to_createAccountFragment)
+            findNavController().navigate(R.id.action_signInFragment_to_fragmentA)
             validateAndLogin()
         }
 

@@ -20,16 +20,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Switch fragments
-        binding.switchFragmentButton.setOnClickListener {
-            val navController =
-                (supportFragmentManager.findFragmentById(R.id.bottomMenuContainer) as NavHostFragment).findNavController()
-            if (isFragmentAVisible) {
-                navController.navigate(R.id.fragmentB)
-            } else {
-                navController.navigate(R.id.fragmentA)
-            }
-            isFragmentAVisible = !isFragmentAVisible
-        }
+//        binding.switchFragmentButton.setOnClickListener {
+//            val navController =
+//                (supportFragmentManager.findFragmentById(R.id.bottomMenuContainer) as NavHostFragment).findNavController()
+//            if (isFragmentAVisible) {
+//                navController.navigate(R.id.fragmentB)
+//            } else {
+//                navController.navigate(R.id.fragmentA)
+//            }
+//            isFragmentAVisible = !isFragmentAVisible
+//        }
 
     }
 }
