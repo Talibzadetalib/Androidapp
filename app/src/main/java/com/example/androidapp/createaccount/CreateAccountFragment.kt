@@ -38,6 +38,7 @@ class CreateAccountFragment : CoreFragment<FragmentCreateAccountBinding>(){
                 Toast.makeText(
                     requireContext(),
                     "Registration successful: $email",
+                    //show toast message
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
