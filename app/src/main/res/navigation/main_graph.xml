@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/signInFragment">
+    app:startDestination="@id/recipesFragment">
 
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.example.androidapp.signin.SignInFragment"
-        android:label="SignInFragment" >
+        android:label="SignInFragment">
         <action
             android:id="@+id/action_signInFragment_to_createAccountFragment"
             app:destination="@id/createAccountFragment" />
@@ -22,7 +23,7 @@
     <fragment
         android:id="@+id/fragmentA"
         android:name="com.example.androidapp.FragmentA"
-        android:label="FragmentA" >
+        android:label="FragmentA">
         <action
             android:id="@+id/action_fragmentA_to_fragmentB"
             app:destination="@id/fragmentB" />
@@ -31,4 +32,10 @@
         android:id="@+id/fragmentB"
         android:name="com.example.androidapp.FragmentB"
         android:label="FragmentB" />
+
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="com.example.androidapp.RecipesFragment"
+        tools:layout="@layout/fragment_recipes"
+        android:label="fragment_recipe" />
 </navigation>

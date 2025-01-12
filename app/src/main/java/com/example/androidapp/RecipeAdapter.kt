@@ -10,10 +10,12 @@ import com.example.androidapp.databinding.RecipeItemBinding
 class RecipeAdapter(
     private var recipes: List<RecipeModel>,
     private val itemClickListener: (Int) -> Unit,
-    private val buttonClickListener: (String, Int) -> Unit
-): RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
 
-    inner class RecipeViewHolder(private val binding: RecipeItemBinding): RecyclerView.ViewHolder(binding.root) {
+    private val buttonClickListener: (String, Int) -> Unit,
+) : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
+    inner class RecipeViewHolder(private val binding: RecipeItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+
         fun bind(recipe: RecipeModel) {
             binding.recipeTitle.text = recipe.title
             binding.recipeDescription.text = recipe.description
